@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 
 const Character = (props) => {
-  let {name, url} = props.data
-  
+  let {name, url, image} = props.data
+
   return(
     <div>
-      {name}
+      <img class="character-img" src={require(`../images/${image}`)}/>
     </div>
   )
 }
