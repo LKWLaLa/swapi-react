@@ -1,10 +1,11 @@
 import React from 'react'
 
 const Character = (props) => {
-
+  let {name, url} = props.data
+  
   return(
     <div>
-      character
+      {name}
     </div>
   )
 }
