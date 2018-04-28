@@ -5,7 +5,11 @@ import Character from './Character'
 class Home extends Component {
 
   characters = () => {
-    return StarWars.characters.map((character) => <Character data={character} />)
+    return StarWars.characters.map(
+      (character, index) => <Character data={character} 
+      history={this.props.history}
+      key={index}/>
+    )
   }
 
   render(){
