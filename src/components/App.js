@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header"></header>
         <Switch>
-          <Route exact path= '/:character' render={(props)=><FilmsContainer {...props} />} />
+          <Route exact path= '/:characterId' render={(props)=><FilmsContainer {...props} />} />
           <Route exact path= '/' render={(props)=><Home {...props} /> } />          
         </Switch>
       </div>

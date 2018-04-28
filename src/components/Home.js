@@ -8,7 +8,7 @@ class Home extends Component {
     return StarWars.characters.map(
       (character, index) => <Character data={character} 
       history={this.props.history}
-      key={index}/>
+      key={index} id={index}/>
     )
   }
 
