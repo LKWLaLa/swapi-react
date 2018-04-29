@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import StarWars from '../starWars.json'
 import Film from './Film'
-
+import radar from '../images/42.gif'
 class FilmsContainer extends Component {
 
   constructor(props){
@@ -49,7 +49,7 @@ class FilmsContainer extends Component {
     return(
       <div>
         <h1>{name}'s Films:</h1>
-        {this.renderFilms()}
+        {this.renderFilms() || <img src={radar} alt="loading" />}
         <div>{this.state.errorMsg}</div>
       </div>
     )
