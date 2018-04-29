@@ -45,8 +45,10 @@ class FilmsContainer extends Component {
   }
 
   render(){
+    let name = StarWars.characters[this.state.characterId].name
     return(
       <div>
+        <h1>{name}'s Films:</h1>
         {this.renderFilms()}
         <div>{this.state.errorMsg}</div>
       </div>
