@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import StarWars from '../starWars.json'
+import Film from './Film'
 
 class FilmsContainer extends Component {
 
@@ -35,10 +36,18 @@ class FilmsContainer extends Component {
       this.setState({errorMsg: "The greatest teacher, failure is.  The requested character could not be found."}))
   }
 
+  renderFilms = () => {
+    let films = this.state.films
+    if (films.length > 0){
+      return films.map((film, index) => <Film data={film} key={index} />)
+    } 
+    return null
+  }
+
   render(){
     return(
       <div>
-        FilmsContainer
+        {this.renderFilms()}
         <div>{this.state.errorMsg}</div>
       </div>
     )
