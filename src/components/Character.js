@@ -8,12 +8,12 @@ const Character = (props) => {
   }
 
   return(
-    <div>
+    <div className="character-tile">
       <img className="character-img" 
           src={require(`../images/${image}`)}
           onClick={handleClick} 
           alt={name}/>
-    <h3>{name}</h3>
+      <h3>{name}</h3>
     </div>
   )
 }

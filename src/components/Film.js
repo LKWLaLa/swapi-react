@@ -11,9 +11,9 @@ const Film = (props) => {
 
   return(
     <div className="film">
-      <h2>{title}</h2>
-      <h3>{formatted_date()}</h3>
-      <p>{opening_crawl}</p>
+      <h2 className="film-info">{title}</h2>
+      <h3 className="film-info">Released: {formatted_date()}</h3>
+      <p className="opening-crawl">{opening_crawl}</p>
     </div>
   )
 }

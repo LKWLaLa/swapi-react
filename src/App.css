@@ -2,17 +2,22 @@
   text-align: center;
 }
 
-.App-header {
-  height: 50px;
-  padding: 10px;
-  color: white;
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.character-tile {
+  margin: 1em 5em 1em 5em;
 }
 
 .character-img {
-  width:  12em;
-  height: 9em;
+  width:  14.5em;
+  height: 10em;
   border-radius: 10px;
-  margin: .5em;
+  margin: .3em;
 }
 
 .character-img:hover {
@@ -23,4 +28,17 @@
   margin: 1.5em;
 }
 
+.film {
+  margin: 2em 3em 2em 3em;
+}
 
+.film-info {
+  color: #a2dba3;
+  line-height: .6em;
+}
+
+.opening-crawl {
+  transform: perspective(600px) rotateX(15deg);
+  line-height: 2em;
+  font-size: 1.3em;
+}

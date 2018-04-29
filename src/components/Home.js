@@ -15,7 +15,10 @@ class Home extends Component {
   render(){
     return(
       <div>
-        {this.characters()}
+        <h1>Star Wars Characters and Their Films</h1><br />
+        <div className="flex-container">
+          {this.characters()}
+        </div>
       </div>
     )
   }

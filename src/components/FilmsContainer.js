@@ -49,7 +49,9 @@ class FilmsContainer extends Component {
     return(
       <div>
         <h1>{name}'s Films:</h1>
-        {this.renderFilms() || <img id="spinner" src={radar} alt="loading" />}
+        <div className="flex-container">
+          {this.renderFilms() || <img id="spinner" src={radar} alt="loading" />}
+        </div>
         <div>{this.state.errorMsg}</div>
       </div>
     )
