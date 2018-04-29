@@ -2,7 +2,7 @@
 
 ### Description:
 
-A small React practice project, using the [Star Wars API](swapi.co).
+A small React practice project, using the [Star Wars API](https://swapi.co/).
 
 ### Dependencies:
 
