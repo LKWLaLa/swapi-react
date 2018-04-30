@@ -37,7 +37,7 @@
 }
 
 .opening-crawl {
-  transform: perspective(600px) rotateX(15deg);
+  transform: perspective(300px) rotateX(30deg);
   line-height: 2em;
   font-size: 1.3em;
 }
